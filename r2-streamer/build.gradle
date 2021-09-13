@@ -49,14 +49,16 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:$JACKSON_VERSION"
     implementation "com.github.barteksc:pdfium-android:1.7.1"
     implementation "com.jakewharton.timber:timber:4.7.1"
+    implementation 'org.nanohttpd:nanohttpd:2.3.2-SNAPSHOT'
+    implementation 'org.nanohttpd:nanohttpd-nanolets:2.3.2-SNAPSHOT'
     //noinspection GradleDependency
-    implementation ("com.github.readium.nanohttpd:nanohttpd:master-SNAPSHOT") {
-        exclude group: 'org.parboiled'
-    }
+    // implementation ("com.github.readium.nanohttpd:nanohttpd:master-SNAPSHOT") {
+    //     exclude group: 'org.parboiled'
+    // }
     //noinspection GradleDependency
-    implementation ("com.github.readium.nanohttpd:nanohttpd-nanolets:master-SNAPSHOT") {
-        exclude group: 'org.parboiled'
-    }
+    // implementation ("com.github.readium.nanohttpd:nanohttpd-nanolets:master-SNAPSHOT") {
+    //     exclude group: 'org.parboiled'
+    // }
     //AM NOTE: conflicting support libraries, excluding these
     implementation("com.mcxiaoke.koi:core:0.5.5") {
         exclude module: 'support-v4'
