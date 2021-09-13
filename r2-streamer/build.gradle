@@ -50,11 +50,11 @@ dependencies {
     implementation "com.github.barteksc:pdfium-android:1.7.1"
     implementation "com.jakewharton.timber:timber:4.7.1"
     //noinspection GradleDependency
-    implementation ("org.nanohttpd:nanohttpd:2.3.2-SNAPSHOT") {
+    implementation ("com.github.readium.nanohttpd:nanohttpd:master-SNAPSHOT") {
         exclude group: 'org.parboiled'
     }
     //noinspection GradleDependency
-    implementation ("org.nanohttpd:nanohttpd-nanolets:2.3.2-SNAPSHOT") {
+    implementation ("com.github.readium.nanohttpd:nanohttpd-nanolets:master-SNAPSHOT") {
         exclude group: 'org.parboiled'
     }
     //AM NOTE: conflicting support libraries, excluding these
